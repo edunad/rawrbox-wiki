@@ -208,4 +208,16 @@ function Vector3:ceil() end
 ---
 function Vector3:cross(other) end
 
+---
+---@param other Vector3
+---@return Vector3
+---* Returns the min between 2 vectors
+---
+function Vector3:min(other) end
 
+---
+---@param other Vector3
+---@return Vector3
+---* Returns the max between 2 vectors
+---
+function Vector3:max(other) end

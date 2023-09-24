@@ -179,3 +179,17 @@ function Vector4:inverse() end
 ---* Returns the interpolated Vector4
 ---
 function Vector4:interpolate(other, t) end
+
+---
+---@param other Vector4
+---@return Vector4
+---* Returns the min between 2 vectors
+---
+function Vector4:min(other) end
+
+---
+---@param other Vector4
+---@return Vector4
+---* Returns the max between 2 vectors
+---
+function Vector4:max(other) end

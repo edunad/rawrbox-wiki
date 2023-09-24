@@ -175,4 +175,16 @@ function Vector2:round() end
 ---
 function Vector2:ceil() end
 
+---
+---@param other Vector2
+---@return Vector2
+---* Returns the min between 2 vectors
+---
+function Vector2:min(other) end
 
+---
+---@param other Vector2
+---@return Vector2
+---* Returns the max between 2 vectors
+---
+function Vector2:max(other) end
