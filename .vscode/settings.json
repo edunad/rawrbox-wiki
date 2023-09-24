@@ -1,0 +1,28 @@
+{
+  "Lua.diagnostics.globals": [
+    "Vector2",
+    "Vector3",
+    "Vector4",
+    "Color",
+    "Matrix",
+    "MOD",
+    "jit",
+    "isNumber",
+    "isTable",
+    "isString",
+    "json",
+    "fmt",
+    "printTable",
+    "scripting",
+    "stencil",
+    "http",
+    "curtime",
+    "BGFX_FRAME",
+    "resources",
+    "timer",
+    "Instance",
+    "ui",
+    "i18n"
+  ],
+  "Lua.diagnostics.disable": ["lowercase-global"]
+}

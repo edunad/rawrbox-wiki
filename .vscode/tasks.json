@@ -1,0 +1,69 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run multi-threaded clang-tidy",
+      "type": "shell",
+      "command": "python run-clang-tidy.py -fix -p \"build\" -j 12 -filter build -filter bin -filter tests",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+
+    {
+      "label": "Run clang-tidy",
+      "type": "shell",
+      "command": "clang-tidy -p \"build\" `find -not -path \"*build*\" -not -path \"*deps*\" -not -path \"*.cache*\" \\( -name *.cpp -o -name *.h -o -name *.hpp \\)` --fix-errors",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+
+    {
+      "label": "Run iwyu",
+      "type": "shell",
+      "command": "export iwyu=../${workspaceFolder} && python3 iwyu_tool.py ./engine ./math ./physics ./render ./resources ./ui ./utils -p build -j 8 > .iwyu && python3 fix_includes.py --comments < .iwyu",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+
+    {
+      "label": "Build tests",
+      "type": "cmake",
+      "command": "build",
+      "group": "build"
+    },
+
+    {
+      "label": "Clean project",
+      "type": "shell",
+      "command": "rm -rf build bin .cache bass/deps webm/deps",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      }
+    }
+  ]
+}

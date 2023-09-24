@@ -1,0 +1,109 @@
+:root {
+    --ifm-color-primary: #2e8555;
+    --ifm-color-primary-dark: #29784c;
+    --ifm-color-primary-darker: #277148;
+    --ifm-color-primary-darkest: #205d3b;
+    --ifm-color-primary-light: #33925d;
+    --ifm-color-primary-lighter: #359962;
+    --ifm-color-primary-lightest: #3cad6e;
+
+    --ifm-code-font-size: 95%;
+    --ifm-hr-background-color: #484848;
+
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    --ifm-table-background: #090a1196;
+    --ifm-table-border-color: #000;
+}
+
+[data-theme='dark'] {
+    --ifm-color-primary: #16ffa6;
+    --ifm-color-primary-dark: #00f99a;
+    --ifm-color-primary-darker: #00eb92;
+    --ifm-color-primary-darkest: #00c278;
+    --ifm-color-primary-light: #32ffb1;
+    --ifm-color-primary-lighter: #40ffb6;
+    --ifm-color-primary-lightest: #69ffc6;
+
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] {
+    --ifm-background-color: #191b20;
+    --ifm-navbar-background-color: #0e0e0f;
+    --ifm-table-stripe-background: rgb(0 0 0 / 7%);
+}
+
+.navbar__search > div > kbd {
+    --ifm-navbar-search-input-placeholder-color: rgb(255, 255, 255);
+    --ifm-navbar-search-input-background-color: rgb(12, 12, 12);
+
+    border: 1px solid black;
+    box-shadow: inset 0 -1px 0 rgb(20, 20, 20);
+}
+
+.navbar__search-input {
+    --ifm-navbar-search-input-background-color: #1c1c1f;
+    --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
+
+    width: 40vw;
+
+    cursor: pointer;
+    transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+}
+
+.navbar__search-input:focus {
+    background-color: var(--ifm-color-black);
+    outline: unset;
+}
+
+.navbar__search-input:hover {
+    background-color: #242429;
+}
+
+.navbar__search-input:focus-visible {
+    border: unset;
+    box-shadow: inset 1px 1px 0 0 #0c0c0e, 0 3px 8px 0 #000309;
+}
+
+.navbar__search > span > span > div > span > div[aria-selected='true'] {
+    background-color: #2a2a2e !important;
+}
+
+// Make it full wide support
+main > .container {
+    margin: 0 40px 0 40px;
+    max-width: initial !important;
+
+    position: relative;
+}
+
+.theme-code-block {
+    border-bottom: solid 2px #0d0d10;
+    border-right: solid 1px #111116;
+}
+
+.footer--dark {
+    --ifm-footer-background-color: #0e0e0f;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    color: #a1a1a1;
+}
+
+table thead tr {
+    background-color: #14162596;
+}
+
+.wiki-bg-img {
+    position: absolute;
+    top: 0;
+    left: -40px;
+
+    width: calc(100% + 80px);
+    max-width: unset;
+
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}

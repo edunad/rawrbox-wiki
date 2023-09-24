@@ -1,0 +1,53 @@
+/* API ENV TAGS */
+.env-tag {
+    position: relative;
+    padding-left: 25px;
+}
+
+.env-tag::before {
+    content: '';
+
+    display: block;
+    position: absolute;
+
+    width: calc(19px + 4px); // + padding
+    height: 18px;
+
+    left: 4px;
+    top: 7px;
+
+    background-color: #090a11;
+    border: solid 1px #090a11;
+    border-radius: 20%;
+}
+
+.env-tag::after {
+    content: '';
+
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 8px;
+
+    width: calc(19px + 4px); // + padding
+    height: 18px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+// SHARED -----
+.env-global::after {
+    background-image: url('/img/wiki/global.png');
+    width: 19px;
+}
+
+img[data-tag='env-tag'] {
+    padding-left: 2px;
+    padding-right: 2px;
+
+    background-color: #090a11;
+    border: solid 1px #090a11;
+    border-radius: 20%;
+}

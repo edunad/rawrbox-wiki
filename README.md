@@ -1,2 +1,1 @@
-# rawrbox-wiki
-Wiki for rawrbox
+# 🐲 Welcome to RawrBox WIKI
