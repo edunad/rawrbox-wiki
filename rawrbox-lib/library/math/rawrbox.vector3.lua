@@ -84,16 +84,35 @@ function Vector3:zero() end
 function Vector3:one() end
 
 ---
----@return number
----* Returns a Vector3 size
+---@return Vector3
+---* Returns up
 ---
-function Vector3:size() end
+function Vector3:up() end
+
+---
+---@return Vector3
+---* Returns forward
+---
+function Vector3:forward() end
+
+---
+---@return Vector3
+---* Returns left
+---
+function Vector3:left() end
 
 ---
 ---@return table
 ---* Returns Vector3 as a array
 ---
 function Vector3:data() end
+
+---
+---@return number
+---* Returns a Vector3 size
+---
+function Vector3:size() end
+
 
 ---
 ---@param min Vector3 | number
@@ -117,11 +136,10 @@ function Vector3:distance(other) end
 function Vector3:length() end
 
 ---
----@param other Vector3
 ---@return number
----* Returns the angle of the Vector3 from the given Vector3
+---* Returns the sqrMagnitude of the Vector3
 ---
-function Vector3:angle(other) end
+function Vector3:sqrMagnitude() end
 
 ---
 ---@return Vector3
@@ -131,41 +149,10 @@ function Vector3:abs() end
 
 ---
 ---@param other Vector3
----@param t number
----@return Vector3
----* Returns the lerped Vector3
----
-function Vector3:lerp(other, t) end
-
----
 ---@return number
----* Returns the Vector3 atan2
+---* Returns the angle of the Vector3 from the given Vector3
 ---
-function Vector3:atan2() end
-
----
----@param ang number
----@return Vector3
----* Returns a Vector3
----
-function Vector3:sinCos(ang) end
-
----
----@param ang number
----@return Vector3
----* Returns a Vector3
----
-function Vector3:cosSin(ang) end
-
----
----@param a1 Vector3
----@param a2 Vector3
----@param a3 Vector3
----@param a4 Vector3
----@return Vector3
----* Returns the intersection
----
-function Vector3:intersects(a1, a2, a3, a4) end
+function Vector3:angle(other) end
 
 ---
 ---@param ang number
@@ -177,10 +164,11 @@ function Vector3:rotateAroundOrigin(ang, origin) end
 
 ---
 ---@param other Vector3
----@return number
----* Returns the dot Vector3
+---@param t number
+---@return Vector3
+---* Returns the lerped Vector3
 ---
-function Vector3:dot(other) end
+function Vector3:lerp(other, t) end
 
 ---
 ---@return Vector3
@@ -191,9 +179,9 @@ function Vector3:normalized() end
 ---
 ---@param other Vector3
 ---@return number
----* Returns the cross Vector3
+---* Returns the dot Vector3
 ---
-function Vector3:cross(other) end
+function Vector3:dot(other) end
 
 ---
 ---@return Vector3
@@ -212,5 +200,12 @@ function Vector3:round() end
 ---* Returns the ceiled Vector3
 ---
 function Vector3:ceil() end
+
+---
+---@param other Vector3
+---@return number
+---* Returns the cross Vector3
+---
+function Vector3:cross(other) end
 
 

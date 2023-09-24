@@ -3,10 +3,12 @@
     "packageManager": "yarn@3.6.3",
     "version": "0.0.0",
     "private": true,
+    "main": "./index.js",
     "scripts": {
         "start": "docusaurus start --no-open",
         "serve": "docusaurus serve --dir .bin --no-open",
-        "build": "docusaurus build --out-dir .bin",
+        "build": "yarn build-lib && docusaurus build --out-dir .bin",
+        "build-lib": "node . --out ./docs/rawrbox/lua_api",
         "swizzle": "docusaurus swizzle"
     },
     "dependencies": {

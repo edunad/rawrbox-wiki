@@ -12,7 +12,7 @@ const init = () => {
     const gvarTemplate = fs.readFileSync('./md-templates/GVAR_TEMPLATE.md', 'utf8');
 
     const libPath = './rawrbox-lib/library';
-    const output = `${argv.out ?? './'}`;
+    const output = `${argv.out ?? './.out'}`;
 
     console.warn(`Writting wiki to: ${output}`);
 
