@@ -1,7 +1,7 @@
 ---
-sidebar_label: Contributing
-title: Contributing
-description: Contributing
+sidebar_label: 🔨 Contributing
+title: 🔨 Contributing
+description: 🔨 Contributing
 hide_title: true
 ---
 

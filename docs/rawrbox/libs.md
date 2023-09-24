@@ -1,7 +1,7 @@
 ---
-sidebar_label: Libs
-title: Libs
-description: Libs
+sidebar_label: 📑 Libs
+title: 📑 Libs
+description: 📑 Libs
 hide_title: true
 ---
 

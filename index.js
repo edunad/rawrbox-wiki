@@ -32,7 +32,7 @@ const init = () => {
         },
         mdLinkParser: (type, linkMap, data) => {
             const link = linkMap[data.title?.link ?? data.link];
-            const folder = link.replace('rawrbox.', '').replace('.lua', '');
+            const folder = link?.replace('rawrbox.', '').replace('.lua', '');
 
             if (type === '$TITLE_NAME$') {
                 if (link) {
@@ -47,6 +47,8 @@ const init = () => {
 
                 return `${data.type}`;
             }
+
+            return data.name ?? data.dir;
         },
         mdTextParser: (linkMap, template, codeBlock) => {
             template = template.replace(/\$TITLE_NAME_CLEAN\$/g, codeBlock.title.msg);

@@ -1,7 +1,7 @@
 ---
-sidebar_label: Dependencies
-title: Dependencies
-description: Dependencies
+sidebar_label: 🔗 Dependencies
+title: 🔗 Dependencies
+description: 🔗 Dependencies
 hide_title: true
 ---
 

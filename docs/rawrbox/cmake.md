@@ -1,7 +1,7 @@
 ---
-sidebar_label: CMAKE Options
-title: CMAKE Options
-description: CMAKE Options
+sidebar_label: 💾 CMAKE Options
+title: 💾 CMAKE Options
+description: 💾 CMAKE Options
 hide_title: true
 ---
 

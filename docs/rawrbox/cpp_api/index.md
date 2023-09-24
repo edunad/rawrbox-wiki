@@ -1,8 +1,9 @@
 ---
-sidebar_label: 💽 CPP API
-title: 💽 CPP API
-description: 💽 CPP API
+sidebar_label: 💽 C++
+title: 💽 C++
+description: 💽 C++
 hide_title: true
+sidebar_position: 0
 ---
 
-# CPP API
+# C++

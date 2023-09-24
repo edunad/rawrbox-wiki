@@ -8,7 +8,7 @@
         "start": "docusaurus start --no-open",
         "serve": "docusaurus serve --dir .bin --no-open",
         "build": "yarn build-lib && docusaurus build --out-dir .bin",
-        "build-lib": "node . --out docs/rawrbox/lua_api",
+        "build-lib": "node . --out docs/rawrbox/lua_api && cp ./md-templates/SUMMARY_TEMPLATE.md ./docs/rawrbox/lua_api/index.md",
         "swizzle": "docusaurus swizzle"
     },
     "dependencies": {
