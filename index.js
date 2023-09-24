@@ -25,23 +25,26 @@ const init = () => {
             gvar: gvarTemplate,
         },
         silent: false,
-        clean: false,
+        clean: true,
         mdFolderParser: (file) => {
             const fixedPath = file.replace(`${libPath}/`, '');
             return fixedPath.replace('rawrbox.', '').replace('.lua', '');
         },
         mdLinkParser: (type, linkMap, data) => {
             const link = linkMap[data.title?.link ?? data.link];
+            const folder = link.replace('rawrbox.', '').replace('.lua', '');
 
             if (type === '$TITLE_NAME$') {
-                if (link)
-                    return `[${data.title.link}](../${link.replace('rawrbox.', '').replace('.lua', '')}/README.md)${data.title.msg.replace(
-                        data.title.link,
-                        '',
-                    )}`;
+                if (link) {
+                    return `[${data.title.link}](/${output}/${folder}/README.md)${data.title.msg.replace(data.title.link, '')}`;
+                }
+
                 return `${data.title.msg}`;
             } else if (type === '$PARAMETERS$' || type === '$RETURNS$' || type === '$FIELDS$') {
-                if (link) return `[${data.type}](../${link.replace('rawrbox.', '').replace('.lua', '')}/README.md)`;
+                if (link) {
+                    return `[${data.type}](/${output}/${folder}/README.md)`;
+                }
+
                 return `${data.type}`;
             }
         },

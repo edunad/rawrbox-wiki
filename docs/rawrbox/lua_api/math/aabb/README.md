@@ -16,6 +16,6 @@ AABB's entry class<br/>
 
 | Type   | Name | Optional |
 | ------ | ---- | -------: |
-| [Vector2](../math/vector2/README.md) | pos |   |
-| [Vector2](../math/vector2/README.md) | size |   |
+| [Vector2](/docs/rawrbox/lua_api/math/vector2/README.md) | pos |   |
+| [Vector2](/docs/rawrbox/lua_api/math/vector2/README.md) | size |   |
 

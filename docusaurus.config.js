@@ -72,10 +72,10 @@ const config = {
                         type: 'search',
                         position: 'right',
                     },
-                    {
+                    /*{
                         type: 'localeDropdown',
                         position: 'right',
-                    },
+                    },*/
                     {
                         type: 'docsVersionDropdown',
                         position: 'right',

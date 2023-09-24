@@ -2784,17 +2784,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@edunad/lua-wiki-generator@npm:1.0.8":
-  version: 1.0.8
-  resolution: "@edunad/lua-wiki-generator@npm:1.0.8"
+"@edunad/lua-wiki-generator@npm:1.0.9":
+  version: 1.0.9
+  resolution: "@edunad/lua-wiki-generator@npm:1.0.9"
   dependencies:
-    fast-glob: ^3.2.12
-    fs-extra: ^10.1.0
-    jest: ^29.0.3
-    yargs: ^17.5.1
+    fast-glob: ^3.3.1
+    fs-extra: ^11.1.1
+    jest: ^29.7.0
+    yargs: ^17.7.2
   bin:
     lua-wiki-generator: cli.js
-  checksum: 44ced026d0ae5ef81ebef3687bd7ccfd3a35fe4b25d81463427636a094728658f6fd935db1931a10e58b150258a55f0738f4018a93d7118479a7420e99fa6aab
+  checksum: aba3df915868c7f01379d6e3f088d71ba469c9452265a0936acd0afc9f848e936b8fbb96e472905dd875027eb3a5d26c7062fe4d6ef46762a3e0fdda852c1e44
   languageName: node
   linkType: hard
 
@@ -6684,7 +6684,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.12":
+"fast-glob@npm:^3.3.1":
   version: 3.3.1
   resolution: "fast-glob@npm:3.3.1"
   dependencies:
@@ -6952,6 +6952,17 @@ __metadata:
     jsonfile: ^6.0.1
     universalify: ^2.0.0
   checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
+  languageName: node
+  linkType: hard
+
+"fs-extra@npm:^11.1.1":
+  version: 11.1.1
+  resolution: "fs-extra@npm:11.1.1"
+  dependencies:
+    graceful-fs: ^4.2.0
+    jsonfile: ^6.0.1
+    universalify: ^2.0.0
+  checksum: fb883c68245b2d777fbc1f2082c9efb084eaa2bbf9fddaa366130d196c03608eebef7fb490541276429ee1ca99f317e2d73e96f5ca0999eefedf5a624ae1edfd
   languageName: node
   linkType: hard
 
@@ -8711,7 +8722,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^29.0.3":
+"jest@npm:^29.7.0":
   version: 29.7.0
   resolution: "jest@npm:29.7.0"
   dependencies:
@@ -10817,7 +10828,7 @@ __metadata:
     "@docusaurus/module-type-aliases": 2.4.3
     "@docusaurus/preset-classic": 2.4.3
     "@easyops-cn/docusaurus-search-local": ^0.36.0
-    "@edunad/lua-wiki-generator": 1.0.8
+    "@edunad/lua-wiki-generator": 1.0.9
     "@mdx-js/react": ^1.6.22
     "@tsconfig/docusaurus": ^2.0.1
     clsx: ^2.0.0
@@ -13592,7 +13603,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.3.1, yargs@npm:^17.5.1, yargs@npm:^17.7.1":
+"yargs@npm:^17.3.1, yargs@npm:^17.7.1, yargs@npm:^17.7.2":
   version: 17.7.2
   resolution: "yargs@npm:17.7.2"
   dependencies:

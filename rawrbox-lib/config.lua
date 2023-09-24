@@ -1,4 +1,4 @@
-name    = 'RawrBox'
+name    = 'rawrbox'
 configs = {
 	{
         name  = 'Lua.runtime.version',

@@ -16,7 +16,7 @@ BBOX's entry class<br/>
 
 | Type   | Name | Optional |
 | ------ | ---- | -------: |
-| [Vector3](../math/vector3/README.md) | min |   |
-| [Vector3](../math/vector3/README.md) | max |   |
-| [Vector3](../math/vector3/README.md) | size |   |
+| [Vector3](/docs/rawrbox/lua_api/math/vector3/README.md) | min |   |
+| [Vector3](/docs/rawrbox/lua_api/math/vector3/README.md) | max |   |
+| [Vector3](/docs/rawrbox/lua_api/math/vector3/README.md) | size |   |
 

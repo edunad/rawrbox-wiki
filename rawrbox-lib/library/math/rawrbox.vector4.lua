@@ -124,8 +124,8 @@ function Vector4:sqrMagnitude() end
 function Vector4:normalized() end
 
 ---
----@param min Vector4 | number
----@param max Vector4 | number
+---@param min Vector4|number
+---@param max Vector4|number
 ---@return Vector4
 ---* Returns the clamped Vector4
 ---

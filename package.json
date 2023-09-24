@@ -8,7 +8,7 @@
         "start": "docusaurus start --no-open",
         "serve": "docusaurus serve --dir .bin --no-open",
         "build": "yarn build-lib && docusaurus build --out-dir .bin",
-        "build-lib": "node . --out ./docs/rawrbox/lua_api",
+        "build-lib": "node . --out docs/rawrbox/lua_api",
         "swizzle": "docusaurus swizzle"
     },
     "dependencies": {
@@ -25,7 +25,7 @@
     },
     "devDependencies": {
         "@docusaurus/module-type-aliases": "2.4.3",
-        "@edunad/lua-wiki-generator": "1.0.8",
+        "@edunad/lua-wiki-generator": "1.0.9",
         "@tsconfig/docusaurus": "^2.0.1",
         "docusaurus-plugin-sass": "^0.2.5",
         "prettier": "^3.0.3",
