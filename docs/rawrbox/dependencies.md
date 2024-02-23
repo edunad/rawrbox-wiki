@@ -9,8 +9,7 @@ hide_title: true
 
 | LIB                 | NOTE                                                |
 | :------------------ | :-------------------------------------------------- |
-| bgfx                |                                                     |
-| bx                  | Required by `bgfx`                                  |
+| DiligentCore        |                                                     |
 | glfw                |                                                     |
 | nlohmann_json       | Used for JSON loading                               |
 | fmt                 | Used for text formatting                            |
@@ -29,4 +28,5 @@ hide_title: true
 | lua & sol2 & luajit | Used for loading & managing lua scripting           |
 | curl + libcpr       | Used for HTTP / HTTPS requests                      |
 | lunasvg             | Used for SVG loading                                |
+| cpptrace            | Used for easy error tracing                         |
 | libwebp             | Used for WEBP loading                               |

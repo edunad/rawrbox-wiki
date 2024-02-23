@@ -27,7 +27,8 @@ CPMAddPackage(
 
         "RAWRBOX_BUILD_RAWRBOX_RESOURCES ON"
         "RAWRBOX_BUILD_RAWRBOX_ASSIMP ON"
-        "RAWRBOX_BUILD_RAWRBOX_UI ON") # use UI, assimp and resources
+        "RAWRBOX_BUILD_RAWRBOX_UI ON" # use UI, assimp and resources
+    )
 ```
 
 ### fetchContent
@@ -78,7 +79,7 @@ list(PREPEND CONAN_GENERATORS_FOLDER ${CMAKE_BINARY_DIR})
 # ---
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DSPDLOG_FMT_EXTERNAL -DNOMINMAX")
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23) # 23 recommended, but support 20 and lower
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -120,7 +121,8 @@ CPMAddPackage(
 
         "RAWRBOX_BUILD_RAWRBOX_RESOURCES ON"
         "RAWRBOX_BUILD_RAWRBOX_ASSIMP ON"
-        "RAWRBOX_BUILD_RAWRBOX_UI ON") # use UI, assimp and resources
+        "RAWRBOX_BUILD_RAWRBOX_UI ON"  # use UI, assimp and resources
+)
 # --------------
 
 # Grab source files

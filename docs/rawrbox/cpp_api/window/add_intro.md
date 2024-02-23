@@ -8,27 +8,27 @@ hide_title: true
 # Intros
 
 :::warning
-Currently only `.webp` is supported for intros. You do not need `RAWRBOX.RESOURCES` as window will handle the file loading and presenting
+Currently only `.webp` is supported for intros. You do not need `RAWRBOX.RESOURCES` as render will handle the file loading and presenting
 :::
 
 Allows the user to add a custom splash screen / intro
 
 ```cpp
-window->addIntro("./content/my_intro.webp", <intro speed>, <cover>);
+render->addIntro("./content/my_intro.webp", <intro speed>, <cover>, <background color>);
 ```
 
 You can then use `onIntroCompleted` to detect when the intro is completed
 
 ```cpp
-window->onIntroCompleted += [this]() {};
+render->onIntroCompleted += [this]() {};
 ```
 
 ---
 
-If no intro is being played or the screen is black, it means the `update` method is missing the `window->update()` call.
+If no intro is being played or the screen is black, it means the `update` method is missing the `rawrbox::Window::update()` call.
 
-You can also skip intros by calling
+You can also skip all intros by calling
 
 ```cpp
-window->skipIntros(true);
+render->skipIntros(true);
 ```
