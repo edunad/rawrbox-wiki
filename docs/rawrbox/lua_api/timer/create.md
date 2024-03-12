@@ -14,7 +14,7 @@ Your edits in this file will be overwritten in the next build!
 boolean timer:create(id, interval, ticks, callback)
 ```
 
-Creates a timer using the unique id, triggering every x seconds for an x ammount of times.<br/>If ticks is set to <= than 0, it will run infinitely<br/>
+Creates a timer using the unique id, triggering every x seconds for an x ammount of times.<br/>If ticks is set to less or equal than 0, it will run infinitely<br/>
 
 -----------------
 ## Parameters
