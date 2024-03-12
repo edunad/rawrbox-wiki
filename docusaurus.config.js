@@ -39,7 +39,6 @@ const config = {
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
                     admonitions: {
-                        tag: ':::',
                         keywords: ['info', 'error', 'warning'],
                     },
                     remarkPlugins: [

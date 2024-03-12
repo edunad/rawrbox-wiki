@@ -13,7 +13,7 @@ timer = {}
 ---@param callback function "fun(data?: any): void"
 ---@return boolean
 ---* Creates a timer using the unique id, triggering every x seconds for an x ammount of times.
----* If ticks is set to <= than 0, it will run infinitely
+---* If ticks is set to less or equal than 0, it will run infinitely
 ---
 function timer:create(id, interval, ticks, callback)
 end
