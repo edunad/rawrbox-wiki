@@ -86,14 +86,14 @@ namespace my_game {
 #if defined(_DEBUG) && defined(RAWRBOX_SUPPORT_DX12)
 		auto* window = rawrbox::Window::createWindow(Diligent::RENDER_DEVICE_TYPE_D3D12); // DX12 is faster on DEBUG than Vulkan, due to vulkan having extra check steps to prevent you from doing bad things
 #else
-		auto window = rawrbox::Window::createWindow();
+		auto* window = rawrbox::Window::createWindow();
 #endif
 		window->setMonitor(-1);
 		window->setTitle("My Game");
 #ifdef _DEBUG
 		window->init(1024, 768, rawrbox::WindowFlags::Window::WINDOWED);
 #else
-		window->init(-1, -1, rawrbox::WindowFlags::Window::BORDERLESS);
+		window->init(0, 0, rawrbox::WindowFlags::Window::BORDERLESS);
 #endif
 		window->onWindowClose += [this](auto& /*w*/) { this->shutdown(); };
 	}
