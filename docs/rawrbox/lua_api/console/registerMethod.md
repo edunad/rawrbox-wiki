@@ -11,7 +11,7 @@ Your edits in this file will be overwritten in the next build!
 # [console](/docs/rawrbox/lua_api/console/README.md):registerMethod
 
 :::warning
-Console commands should be registered on the MOD:init() function
+Console commands should be registered on the MOD:onInit() function
 :::
 :::warning
 The command id needs to be unique

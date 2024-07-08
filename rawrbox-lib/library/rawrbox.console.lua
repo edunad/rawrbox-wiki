@@ -47,7 +47,7 @@ end
 ---@param callback function "fun(args: string[], userID: number): success: boolean, msg: string"
 ---@param description? string ""
 ---@param flags? CONSOLE.FLAGS ""
----@hint @warning "Console commands should be registered on the MOD:init() function"
+---@hint @warning "Console commands should be registered on the MOD:onInit() function"
 ---@hint @warning "The command id needs to be unique"
 ---* Registers a new console command
 ---
@@ -68,7 +68,7 @@ end
 ---@param var number|string|boolean
 ---@param description? string "Default: ''"
 ---@param flags? CONSOLE.FLAGS "Default: ''"
----@hint @warning "Console commands should be registered on the MOD:init() function"
+---@hint @warning "Console commands should be registered on the MOD:onInit() function"
 ---@hint @warning "The command id needs to be unique"
 ---* Registers a new console command
 ---

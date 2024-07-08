@@ -24,5 +24,8 @@
         "ui",
         "i18n"
     ],
-    "Lua.diagnostics.disable": ["lowercase-global"]
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ],
+    "cmake.ignoreCMakeListsMissing": true
 }
