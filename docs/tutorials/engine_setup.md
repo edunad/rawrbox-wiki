@@ -26,7 +26,7 @@ int main(int /*argc*/, char* /*argv*/[]) {
 #endif
 
 	my_game::Engine engine;
-	engine.setFPS(66); // This controls the max FPS
+	engine.setFPS(120); // This controls the max FPS
 	engine.setTPS(66); // This controls the max update ticks, it's mainly used for physics and other tick specific updates
 	engine.run(); // Start the game
 
@@ -65,7 +65,7 @@ namespace my_game {
 		Game& operator=(Game&&) = delete;
 		~Game() override = default;
 	};
-} // namespace tombmaker
+} // namespace rawrbox
 ```
 
 3. Create a `game.cpp`
@@ -143,12 +143,12 @@ namespace my_game {
 	}
 
 	void Engine::onThreadShutdown(rawrbox::ENGINE_THREADS thread) {
-		if (thread == rawrbox::ENGINE_THREADS::THREAD_INPUT) {
-			rawrbox::Window::shutdown();
-		} else {
+		if (thread == rawrbox::ENGINE_THREADS::THREAD_RENDER) {
 			// Other things you want to cleanup, like pointers
 			rawrbox::RESOURCES::shutdown();
 		}
+
+		rawrbox::Window::shutdown(thread);
 	}
 
 	void Engine::pollEvents() {
