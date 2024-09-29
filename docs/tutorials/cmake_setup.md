@@ -26,8 +26,8 @@ CPMAddPackage(
         "RAWRBOX_BUILD_TESTING OFF"
 
         "RAWRBOX_BUILD_RAWRBOX_RESOURCES ON"
-        "RAWRBOX_BUILD_RAWRBOX_ASSIMP ON"
-        "RAWRBOX_BUILD_RAWRBOX_UI ON" # use UI, assimp and resources
+        "RAWRBOX_BUILD_RAWRBOX_GLTF ON"
+        "RAWRBOX_BUILD_RAWRBOX_UI ON"
     )
 ```
 
@@ -41,9 +41,9 @@ if(NOT rawrbox_POPULATED)
     set(RAWRBOX_BUILD_SAMPLES OFF)
     set(RAWRBOX_BUILD_TESTING OFF)
 
-    # use UI, assimp and resources
+    # use UI, gltf and resources
     set(RAWRBOX_BUILD_RAWRBOX_RESOURCES ON)
-    set(RAWRBOX_BUILD_RAWRBOX_ASSIMP ON)
+    set(RAWRBOX_BUILD_RAWRBOX_GLTF ON)
     set(RAWRBOX_BUILD_RAWRBOX_UI ON)
 
 	FetchContent_Declare(rawrbox
@@ -120,8 +120,8 @@ CPMAddPackage(
         "RAWRBOX_BUILD_TESTING OFF"
 
         "RAWRBOX_BUILD_RAWRBOX_RESOURCES ON"
-        "RAWRBOX_BUILD_RAWRBOX_ASSIMP ON"
-        "RAWRBOX_BUILD_RAWRBOX_UI ON"  # use UI, assimp and resources
+        "RAWRBOX_BUILD_RAWRBOX_GLTF ON"
+        "RAWRBOX_BUILD_RAWRBOX_UI ON"  # use UI, gltf and resources
 )
 # --------------
 
@@ -137,7 +137,7 @@ copy_resources(TARGET ${output_target})
 
 target_include_directories(${output_target} PRIVATE "include")
 target_compile_features(${output_target} PRIVATE cxx_std_${CMAKE_CXX_STANDARD})
-target_link_libraries(${output_target} PRIVATE RAWRBOX.RENDER RAWRBOX.ASSIMP RAWRBOX.UI)
+target_link_libraries(${output_target} PRIVATE RAWRBOX.RENDER RAWRBOX.GLTF RAWRBOX.UI)
 target_compile_definitions(${output_target} PRIVATE NOMINMAX)
 
 

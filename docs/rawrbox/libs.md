@@ -18,10 +18,12 @@ hide_title: true
 | `RAWRBOX.RESOURCES`  | Resources manager lib                              | Resource manager. Handles loading and stores the pointers for easy access                  |        `UTILS`         |
 | `RAWRBOX.PHYSICS.3D` | 3D Physics lib                                     | Handles 3D physics                                                                         |   `ENGINE` & `MATH`    |
 | `RAWRBOX.PHYSICS.2D` | 2D Physics lib                                     | Handles 2D physics                                                                         |   `ENGINE` & `MATH`    |
-| `RAWRBOX.ASSIMP`     | Assimp lib                                         | Handles assimp model loading                                                               | `RENDER` & `RESOURCES` |
+| `RAWRBOX.GLTF`       | GLTF lib                                           | Handles gltf2.0 model loading                                                              | `RENDER` & `RESOURCES` |
 | `RAWRBOX.WEBM`       | WEBM lib                                           | Handles webm loading                                                                       | `RENDER` & `RESOURCES` |
 | `RAWRBOX.SCRIPTING`  | Scripting lib                                      | Handles lua & mod loading                                                                  |   `ENGINE` & `MATH`    |
 | `RAWRBOX.NETWORK`    | Networking lib                                     | Handles networking                                                                         |                        |
+| `RAWRBOX.STEAMWORKS` | Steamworks lib                                     | Handles steamworks                                                                         |        `UTILS`         |
+| `RAWRBOX.IMGUI`      | IMGUI lib                                          | Handles imgui                                                                              |        `RENDER`        |
 
 <br/>
 

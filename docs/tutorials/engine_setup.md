@@ -78,6 +78,8 @@ namespace my_game {
 #include <rawrbox/render/resources/texture.hpp>
 #include <rawrbox/resources/manager.hpp>
 #include <rawrbox/engine/static.hpp>
+#include <rawrbox/gltf/importer.hpp>
+#include <rawrbox/gltf/resources/model.hpp>
 
 #include <my_game/game.hpp>
 
@@ -123,7 +125,7 @@ namespace my_game {
 
 		// Setup resources
 		rawrbox::RESOURCES::addLoader<rawrbox::FontLoader>(); // Add loaders for the files we want to import
-		rawrbox::RESOURCES::addLoader<rawrbox::AssimpLoader>();
+		rawrbox::RESOURCES::addLoader<rawrbox::GLTFLoader>();
 		rawrbox::RESOURCES::addLoader<rawrbox::TextureLoader>();
 		// --------------
 
